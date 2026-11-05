@@ -1,0 +1,46 @@
+STOPER — APLIKACJA PULPITOWA (ZADANIE 2.1)
+Klasa: 4TC | Autor: Szymon D.
+Technologia: C# .NET / WPF (Windows Presentation Foundation)
+========================================================================
+
+OPIS PROJEKTU:
+Nowoczesna, precyzyjna aplikacja okienkowa stopera na pulpit systemu Windows,
+stworzona w technologii C# .NET WPF.
+
+GŁÓWNE FUNKCJONALNOŚCI:
+1. Precyzyjny pomiar czasu:
+   - Dokładność do setnych części sekundy (00:00:00.00).
+   - Odświeżanie interfejsu z częstotliwością 60 FPS (~16 ms).
+   - Oparty na niezawodnej klasie System.Diagnostics.Stopwatch.
+
+2. Dedykowane przyciski sterujące:
+   - START (zielony) — uruchomienie lub wznowienie pomiaru czasu.
+   - STOP (czerwony) — zatrzymanie pomiaru.
+   - OKRĄŻENIE (niebieski) — zapisanie międzyczasu (Split time).
+   - ZERUJ (ciemnoszary) — zresetowanie stopera i wyczyszczenie tabeli okrążeń.
+
+3. Rejestracja okrążeń / międzyczasów:
+   - Wyliczanie czasu pojedynczego okrążenia oraz czasu całkowitego.
+   - Automatyczne oznaczanie najszybszego okrążenia (kolor zielony)
+     oraz najwolniejszego (kolor czerwony).
+   - Przycisk "Kopiuj", pozwalający skopiować całą tabelę wyników do schowka.
+
+4. Wygoda użytkowania (Desktop UX):
+   - Skróty klawiszowe:
+       * Spacja: Start / Stop
+       * L: Okrążenie (Lap)
+       * R: Zeruj (Reset)
+   - Opcja "📌 Zawsze na wierzchu" (Topmost) — stoper unosi się nad innymi oknami.
+   - Dźwięki systemowe potwierdzające kliknięcia.
+
+SPOSÓB URUCHOMIENIA:
+1. Szybkie uruchomienie:
+   - Kliknij dwukrotnie plik "Uruchom_Stoper.bat".
+   lub:
+   - Uruchom gotowy plik wykonywalny "Stoper.exe".
+
+2. Uruchomienie z terminala:
+   dotnet run
+
+3. Kompilacja:
+   dotnet build
